@@ -14,12 +14,15 @@ body {
   margin-bottom: 20px;
 }
 .card-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   margin: 20px 20px;
   text-align: center;
   font-size: 1.2em;
+}
+.card-container-med {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 100%;
 }
 .card-item {
   display: flex;
@@ -27,7 +30,7 @@ body {
   border: 1px solid #000;
   width: 100%;
   margin: 10px 0;
-  background-color: #FFF;
+  background-color: #e9ecee;
 }
 .card-item ul li {
   padding: 10px 15px;
@@ -40,7 +43,7 @@ body {
   align-items: center;
   background-color: rgba(51, 76, 115, 0.8);
   padding: 10px 20px;
-  color: #FFF;
+  color: #FFFFFF;
 }
 .card-item-info {
   display: flex;
@@ -70,14 +73,23 @@ body {
 .card-item-head-1 i {
   margin-bottom: 10px;
 }
+.icon-red {
+  color: #F20505;
+}
+.icon-green {
+  color: #319113;
+}
+.icon-yellow {
+  color: #F1AA1E;
+}
 .title {
-  color: #D8DADB;
+  color: #FFFFFF;
   font-size: 1.2rem;
   font-weight: bold;
   padding: 15px 0;
   text-align: center;
   border: 1px solid #A7B8C0;
-  background-color: #334C73;
+  background-color: rgba(51, 76, 115, 0.8);
   width: 100%;
 }
 .title-1 {
@@ -114,4 +126,36 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+@media screen and (min-width: 320px) {
+  .card-item {
+    margin: 20px 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  .card-container-med {
+    flex-direction: row;
+  }
+  .card-item {
+    margin: 20px 10px;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .wrapper {
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: flex-start;
+  }
+  .card-container-med {
+    flex-direction: column;
+  }
+  .card-item {
+    justify-content: initial;
+  }
 }
