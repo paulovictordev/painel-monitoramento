@@ -12,31 +12,33 @@ body {
   flex-direction: column;
   width: 100%;
 }
-.card {
+.card-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin: 20px 20px;
   text-align: center;
   font-size: 1.2em;
 }
-.card-batery {
+.card-item {
   display: flex;
   border: 1px solid #000;
   width: 100%;
+  margin: 10px 0;
 }
-.card-batery ul li {
+.card-item ul li {
   padding: 10px 15px;
 }
-.card-batery-1 {
+.card-item-icon {
   display: flex;
   align-items: center;
   background-color: rgba(51, 76, 115, 0.8);
   padding: 10px 20px;
   color: #FFF;
 }
-.card-batery-2 {
+.card-item-info {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;  
 }
 .title-1 {
