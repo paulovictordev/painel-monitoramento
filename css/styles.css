@@ -83,6 +83,7 @@ body {
 .title-1 {
   font-weight: bold;
   text-align: center;
+  padding: 20px 0;
 }
 .card-item img {
   max-width: 100%;
@@ -101,10 +102,16 @@ body {
   justify-content: space-around;
   align-content: start;
   padding: 15px 15px;
+  border-left: 1px solid #A7B8C0;
 }
 .card-item-grid-col-info ul {
   font-size: 0.9rem;
 }
 .card-item-grid-col-info ul li i{
   padding-right: 10px;  
+}
+.card-item-grid-col-temp {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
