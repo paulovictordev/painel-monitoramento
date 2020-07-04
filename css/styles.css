@@ -2,3 +2,44 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #D8DADB;
 }
+.container {
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  margin: 20px 20px;
+  text-align: center;
+  font-size: 1.2em;
+}
+.card-batery {
+  display: flex;
+  border: 1px solid #000;
+  width: 100%;
+}
+.card-batery ul li {
+  padding: 10px 15px;
+}
+.card-batery-1 {
+  display: flex;
+  align-items: center;
+  background-color: rgba(51, 76, 115, 0.8);
+  padding: 10px 20px;
+  color: #FFF;
+}
+.card-batery-2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;  
+}
+.title-1 {
+  font-weight: bold;
+  text-align: center;
+}
